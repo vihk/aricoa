@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="cools.css" rel="stylesheet" />
+    <title>Opened the AI</title>
+  </head>
+
+  <body>
+<!--    Hamburger Menu Made by Erik Terwan -->
+<!--        MIT License        -->
+<nav role="navigation">
+  <div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+      <a href="main.html"
+        ><li id="homebutton">❤️ Arianators Coalition</li></a
+      >
+      <a href="ind.html"><li>GPT Detector</li></a>
+      <a href="#"><li>Similarity Checker</li></a>
+      <a href="#"><li>Paraphrasing Checker</li></a>
+    </ul>
+  </div>
+</nav>
+<!-- End of Hamburger Menu-->
+    <div class="reference" tabindex="0">
+    <h1 id="mainheadertext">❤️ Arianators Coalition</h1>
+    <div id="largediv">
+        <h2 id="poweredby">GPT OUTPUT DETECTOR</h2>
+        <h6 id="poweredby">Powered by the <a
+                href=https://github.com/huggingface/transformers/commit/1c542df7e554a2014051dd09becf60f157fed524">/transformers</a>
+            implementation of RoBERTa by Hugging Face.</h6>
+      <script src="runtransformer.js"></script>
+      <div id="textdiv">
+        <textarea id="text-input"></textarea>
+      </div>
+      <div class="asd" id="TRUEresult"><span id="text"></span></div>
+      <button onclick="getPrediction()">Classify Text</button>
+    </div>
+  </body>
+</html>
